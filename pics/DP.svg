@@ -1,0 +1,13 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" fill="#ffffff"></rect>
+  
+  <!-- D (hlavní) -->
+  <text x="60" y="135" font-family="Playfair Display, Didot, Times New Roman, serif" font-size="110" font-weight="700" fill="#111111">
+    D
+  </text>
+  
+  <!-- P (sekundární) -->
+  <text x="110" y="165" font-family="Playfair Display, Didot, Times New Roman, serif" font-size="80" font-weight="700" fill="#777777">
+    P
+  </text>
+</svg>

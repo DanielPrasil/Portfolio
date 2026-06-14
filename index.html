@@ -3,173 +3,165 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Prasil</title>
+    <title>Daniel Prášil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
 </head>
 <body>
 
-<div class="page-wrapper" id="page-wrapper">
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+    <a class="nav-logo" href="#home">
+        <img src="pics/DP.svg" alt="DP logo" />
+    </a>
+    <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- NAV -->
-    <nav class="nav">
-        <div class="nav-logo">
-            <img src="pics/DP.svg" alt="logo" />
+<!-- HOME -->
+<section id="home">
+    <div class="hero-photo">
+        <img src="pics/Hockeyy.png" alt="Daniel Prášil" />
+    </div>
+    <div class="hero">
+        <h1 class="hero-title">Hello,<br>I'm Daniel</h1>
+        <p class="hero-bio">
+            Hockey player &amp; IT Student<br>
+            <span style="color:#bbb;">Berani Zlín U18 · Orbis School</span>
+        </p>
+    </div>
+    <div class="hero-scroll-hint">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-header reveal">
+        <p class="about-eyebrow">About me</p>
+        <h2 class="about-title">IT Student &amp;<br>Athlete</h2>
+    </div>
+    <div class="about-body reveal">
+        <div class="about-text">
+            <p class="about-main">Hi, I'm Daniel Prášil, an IT student at Orbis, web developer, and a guy who loves playing hockey.</p>
+            <p class="about-main">I enjoy creating clear and functional websites and continuously developing my skills. I focus on understandable code while also trying to understand how everything works beneath the surface.</p>
+            <p class="about-main">Besides IT, I've been playing hockey since I was 6. Currently I play for the Berani Zlín U18 academy.</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="#" data-page="home" class="active">Home</a></li>
-            <li><a href="#" data-page="about">About me</a></li>
-            <li><a href="#" data-page="projects">Projects</a></li>
-            <li><a href="#" data-page="contact">Contact</a></li>
-        </ul>
-        <button></button>
-    </nav>
-
-    <!-- ═══════════ HOME PAGE ═══════════ -->
-    <div id="page-home" class="page-content active-page">
-        <div class="hero-photo">
-            <img src="pics/Hockeyy.png" alt="Daniel" />
+        <div class="about-aside-col">
+            <div class="about-fact">
+                <span class="about-fact-num">3</span>
+                <span class="about-fact-label">finished<br>projects</span>
+            </div>
+            <div class="about-fact">
+                <span class="about-fact-num">4+</span>
+                <span class="about-fact-label">technologies<br>I work with</span>
+            </div>
         </div>
-        <section class="hero">
-            <h1 class="hero-title">Hello,<br>I'm Daniel</h1>
-            <p class="hero-bio">
-                Hi, I'm Daniel.<br>
-                Hockey player<br>
-                IT Student<br>
-            </p>
-        </section>
+    </div>
+    <div class="tech-section reveal">
+        <div class="tech-divider"></div>
+        <div class="tech-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" />
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="projects-title reveal">Projects</h2>
+
+    <div class="project-divider"></div>
+    <div class="project-row reveal">
+        <div class="project-body">
+            <h3 class="project-name">Bloom</h3>
+            <p class="project-desc">A website focused on selling flowers made in HTML, CSS, and Bootstrap. Using Bootstrap, I made sure the site doesn't break on devices other than a PC.</p>
+            <span class="project-tag">HTML / CSS / Bootstrap</span>
+        </div>
+        <a href="https://github.com/DanielPrasil" target="_blank" class="project-link">GitHub →</a>
     </div>
 
-    <!-- ═══════════ ABOUT PAGE ═══════════ -->
-    <div id="page-about" class="page-content">
-        <section class="about-section">
-            <div class="about-header">
-                <p class="about-eyebrow">About me</p>
-                <h1 class="about-title">IT Student &<br>Athlete</h1>
-            </div>
-            <div class="about-body">
-                <div class="about-text">
-                    <div class="about-block">
-                        <p class="about-main">Hi, I'm Daniel Prášil, an IT student at Orbis, web developer, and a guy who loves playing hockey.</p>
-                    </div>
-                    <div class="about-block">
-                        <p class="about-main">I enjoy creating clear and functional websites and continuously developing my skills. At work, I focus on understandable code while also trying to understand how everything works.</p>
-                    </div>
-                    <div class="about-block">
-                        <p class="about-main"> Besides IT, I also play hockey since I was only 6, currently i play for the Berani Zlin U18 academy.  .</p>
-                    </div>
-                </div>
-                <div class="about-aside-col">
-                    <div class="about-fact">
-                        <span class="about-fact-num">3</span>
-                        <span class="about-fact-label">finished<br>projects</span>
-                    </div>
-                    <div class="about-fact">
-                        <span class="about-fact-num">4+</span>
-                        <span class="about-fact-label">technologies<br>I work with</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tech-section">
-                <div class="tech-divider"></div>
-                <div class="tech-icons">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" />
-                </div>
-            </div>
-        </section>
+    <div class="project-divider"></div>
+    <div class="project-row reveal">
+        <div class="project-body">
+            <h3 class="project-name">RPG Hra</h3>
+            <p class="project-desc">A text-based RPG game in JavaScript where the player chooses actions with numbers, fights enemies, and gains XP upon defeating them.</p>
+            <span class="project-tag">JavaScript</span>
+        </div>
+        <a href="https://github.com/DanielPrasil" target="_blank" class="project-link">GitHub →</a>
     </div>
 
-    <!-- ═══════════ PROJECTS PAGE ═══════════ -->
-    <div id="page-projects" class="page-content">
-        <section class="projects-section">
-            <div class="projects-header">
-                <h1 class="projects-title">Projects</h1>
-            </div>
-            <div class="projects-list">
-                <div class="project-row">
-                    <div class="project-body">
-                        <h2 class="project-name">Bloom</h2>
-                        <p class="project-desc">A website focused on selling flowers made in HTML, CSS, and Bootstrap. Using Bootstrap, I made sure the site doesn’t break on devices other than a PC.</p>
-                        <span class="project-tag">HTML / CSS / Bootstrap</span>
-                    </div>
-                    <a href="#" class="project-link">GitHub →</a>
-                </div>
-                <div class="project-divider"></div>
-                <div class="project-row">
-                    <div class="project-body">
-                        <h2 class="project-name">RPG Hra</h2>
-                        <p class="project-desc">A text-based RPG game in JavaScript where the player chooses actions with numbers, fights enemies, and when you defeat them you gain XP.</p>
-                        <span class="project-tag">JavaScript</span>
-                    </div>
-                    <a href="#" class="project-link">GitHub →</a>
-                </div>
-                <div class="project-divider"></div>
-                <div class="project-row">
-                    <div class="project-body">
-                        <h2 class="project-name">Apple Info</h2>
-                        <p class="project-desc">A Wikipedia about Apple products made in HTML and CSS. I tried to mimic their simple style and clean, minimalist page design.</p>
-                        <span class="project-tag">HTML / CSS</span>
-                    </div>
-                    <a href="#" class="project-link">GitHub →</a>
-                </div>
-            </div>
-        </section>
+    <div class="project-divider"></div>
+    <div class="project-row reveal">
+        <div class="project-body">
+            <h3 class="project-name">Apple Info</h3>
+            <p class="project-desc">A Wikipedia about Apple products made in HTML and CSS. I tried to mimic their simple style and clean, minimalist page design.</p>
+            <span class="project-tag">HTML / CSS</span>
+        </div>
+        <a href="https://github.com/DanielPrasil" target="_blank" class="project-link">GitHub →</a>
     </div>
+    <div class="project-divider"></div>
+</section>
 
-    <!-- ═══════════ CONTACT PAGE ═══════════ -->
-    <div id="page-contact" class="page-content">
-        <section class="contact-section">
-            <div class="contact-hero">
-                <div class="contact-hero-left">
-                    <p class="contact-eyebrow">Did you like my work?</p>
-                    <h1 class="contact-big-title">
-                        <span>Let's</span>
-                        <span>talk.</span>
-                    </h1>
-                </div>
-                <div class="contact-hero-right">
-                </div>
-            </div>
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    </div>
-                    <div class="contact-card-body">
-                        <span class="contact-card-label">Email</span>
-                        <a href="mailto:Prasil.daniel@seznam.cz" class="contact-card-value">Prasil.daniel@seznam.cz</a>
-                    </div>
-                    <span class="contact-card-arrow">→</span>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S9 17.44 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                    </div>
-                    <div class="contact-card-body">
-                        <span class="contact-card-label">GitHub</span>
-                        <a href="https://github.com/DanielPrasil" target="_blank" class="contact-card-value">github.com/DanielPrasil</a>
-                    </div>
-                    <span class="contact-card-arrow">→</span>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-                    </div>
-                    <div class="contact-card-body">
-                        <span class="contact-card-label">Instagram</span>
-                        <a href="https://instagram.com/d_prasil" target="_blank" class="contact-card-value">@d_prasil</a>
-                    </div>
-                    <span class="contact-card-arrow">→</span>
-                </div>
-            </div>
-        </section>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="contact-hero reveal">
+        <div>
+            <p class="contact-eyebrow">Did you like my work?</p>
+            <h2 class="contact-big-title">
+                <span>Let's</span>
+                <span>talk.</span>
+            </h2>
+        </div>
     </div>
+    <div class="contact-cards">
+        <div class="contact-card reveal">
+            <div class="contact-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-body">
+                <span class="contact-card-label">Email</span>
+                <a href="mailto:Prasil.daniel@seznam.cz" class="contact-card-value">Prasil.daniel@seznam.cz</a>
+            </div>
+            <span class="contact-card-arrow">→</span>
+        </div>
+        <div class="contact-card reveal">
+            <div class="contact-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S9 17.44 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </div>
+            <div class="contact-card-body">
+                <span class="contact-card-label">GitHub</span>
+                <a href="https://github.com/DanielPrasil" target="_blank" class="contact-card-value">github.com/DanielPrasil</a>
+            </div>
+            <span class="contact-card-arrow">→</span>
+        </div>
+        <div class="contact-card reveal">
+            <div class="contact-card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </div>
+            <div class="contact-card-body">
+                <span class="contact-card-label">Instagram</span>
+                <a href="https://instagram.com/d_prasil" target="_blank" class="contact-card-value">@d_prasil</a>
+            </div>
+            <span class="contact-card-arrow">→</span>
+        </div>
+    </div>
+</section>
 
-</div>
+<!-- FOOTER -->
+<footer class="site-footer">
+    <span>© 2025 Daniel Prášil</span>
+    <span>IT Student · Berani Zlín U18</span>
+</footer>
 
+<script src="main.js" defer></script>
 
 </body>
 </html>

@@ -1,22 +1,40 @@
-const links = document.querySelectorAll('.nav-links a[data-page]');
-const pages = document.querySelectorAll('.page-content');
-const wrapper = document.getElementById('page-wrapper');
+// ── Scroll nav border + active link ──────────────────────────────
+const nav = document.getElementById('main-nav');
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section[id]');
 
-function showPage(pageId) {
-    // Hide all pages
-    pages.forEach(p => p.classList.remove('active-page'));
-    // Show target
-    document.getElementById('page-' + pageId).classList.add('active-page');
-    // Update active nav link
-    links.forEach(l => l.classList.remove('active'));
-    document.querySelector(`[data-page="${pageId}"]`).classList.add('active');
-    // Scroll to top
-    window.scrollTo(0, 0);
-}
+window.addEventListener('scroll', () => {
+    // Nav border při scrollu
+    nav.classList.toggle('scrolled', window.scrollY > 20);
 
-links.forEach(link => {
-    link.addEventListener('click', function(e) {
+    // Zvýraznění aktivního odkazu v navigaci
+    let current = '';
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) current = s.id;
+    });
+    navLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+}, { passive: true });
+
+// ── Scroll reveal ─────────────────────────────────────────────────
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// ── Smooth scroll pro nav odkazy ───────────────────────────────────
+navLinks.forEach(a => {
+    a.addEventListener('click', e => {
         e.preventDefault();
-        showPage(this.dataset.page);
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
 });

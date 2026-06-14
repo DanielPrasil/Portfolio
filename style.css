@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-/* ══════════════════════════════
-   BASE
-══════════════════════════════ */
+/*BASE*/
 body {
     font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     background-color: #ffffff;
@@ -19,7 +17,7 @@ body {
     position: relative;
 }
 
-/* Page visibility */
+/*Page visibility*/
 .page-content {
     display: none;
 }
@@ -27,9 +25,7 @@ body {
     display: block;
 }
 
-/* ══════════════════════════════
-   NAV
-══════════════════════════════ */
+/*NAV*/
 .nav {
     display: flex;
     align-items: center;
@@ -84,9 +80,7 @@ body {
     background: #f5f5f5;
 }
 
-/* ══════════════════════════════
-   HOME PAGE
-══════════════════════════════ */
+/*HOME PAGE*/
 #page-home {
     position: relative;
 }
@@ -131,9 +125,7 @@ body {
     color: #333;
 }
 
-/* ══════════════════════════════
-   ABOUT PAGE
-══════════════════════════════ */
+/*ABOUT PAGE*/
 .about-section {
     padding: 80px 80px 100px;
     max-width: 1200px;
@@ -225,7 +217,7 @@ body {
     display: none;
 }
 
-/* Tech section */
+/*Tech section*/
 .tech-section {
     padding-top: 48px;
     border-top: 1px solid #e0e0e0;
@@ -267,9 +259,7 @@ body {
     opacity: 0.75;
 }
 
-/* ══════════════════════════════
-   PROJECTS PAGE
-══════════════════════════════ */
+/*PROJECTS PAGE*/
 .projects-section {
     padding: 60px 48px 100px;
 }
@@ -362,9 +352,7 @@ body {
     border-color: #111;
 }
 
-/* ══════════════════════════════
-   CONTACT PAGE
-══════════════════════════════ */
+/*CONTACT PAGE*/
 .contact-section {
     min-height: calc(100vh - 85px);
 }
@@ -458,9 +446,7 @@ body {
     align-self: flex-end;
 }
 
-/* ══════════════════════════════
-   RESPONSIVE
-══════════════════════════════ */
+/*RESPONSIVE*/
 @media (max-width: 900px) {
     .projects-section {
         padding: 40px 24px 60px;

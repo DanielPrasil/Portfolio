@@ -319,7 +319,7 @@ body {
 }
 
 .project-name {
-    font-size: clamp(30px, 3vw, 26px);
+    font-size: clamp(22px, 3vw, 30px);
     font-weight: 400;
     color: #111;
     letter-spacing: -0.3px;
@@ -466,12 +466,12 @@ body {
         padding: 40px 24px 60px;
     }
     .project-row {
-        grid-template-columns: 44px 1fr;
+        grid-template-columns: 1fr auto;
         gap: 16px;
+        align-items: center;
     }
-    .project-link {
-        grid-column: 2;
-        align-self: flex-start;
+    .project-desc {
+        max-width: 100%;
     }
     .contact-cards {
         grid-template-columns: 1fr;

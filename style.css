@@ -14,7 +14,7 @@ body {
 }
 
 .page-wrapper {
-    position: absolute;
+    position: relative;
 }
 
 /*Page visibility*/
